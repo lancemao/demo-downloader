@@ -1,0 +1,3 @@
+[submodule "authing-demo-java-spring-boot"]
+	path = authing-demo-java-spring-boot
+	url = git@github.com:lancemao/authing-demo-java-spring-boot.git
