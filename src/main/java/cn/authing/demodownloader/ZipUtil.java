@@ -43,9 +43,7 @@ public class ZipUtil {
         // add file only
         if (node.isFile()) {
             fileList.add(generateZipEntry(node.toString()));
-        }
-
-        if (node.isDirectory()) {
+        } else if (node.isDirectory() && !node.getAbsolutePath().endsWith(".git")) {
             String[] subNote = node.list();
             if (subNote != null) {
                 for (String filename : subNote) {
